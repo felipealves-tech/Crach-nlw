@@ -1,25 +1,5 @@
-const LinksSocialMedia = {
-  github: "felpsalvs",
-}
+function toggleMode() {
+  const html = document.documentElement
 
-function changeSocialMediaLinks() {
-  for (let li of socialLinks.children) {
-    const social = li.getAttribute("class")
-    li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-  }
+  html.classList.toggle("light")
 }
-
-changeSocialMediaLinks()
-
-function getGitHubprofileInfos() {
-  const url = `https://api.github.com/users/${LinksSocialMedia.github}`
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      userName.textContent = data.name
-      userBio.textContent = data.bio
-      UserImage.src = data.avatar.url
-      userLogin.textContent = data.login
-    })
-}
-getGitHubprofileInfos()
