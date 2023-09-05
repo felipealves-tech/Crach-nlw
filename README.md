@@ -23,7 +23,7 @@ That project is develop with:
 
 - HTML e CSS
 - JavaScript
-- Git e Github
+- Git
 - Figma
 
 ## 💻 Project
